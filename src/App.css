@@ -135,3 +135,17 @@
 .dashboard-container {
   padding-bottom: 1rem;
 }
+
+.link-btn {
+  color: blue;
+  font-weight: 400;
+  textdecoration: none;
+  cursor: pointer;
+  transition: color 0.1s ease, font-weight 0.3s ease, text-decoration 0.3s ease;
+}
+
+.link-btn:hover {
+  color: blue;
+  font-weight: 600;
+  text-decoration: underline;
+}

@@ -1,10 +1,17 @@
 import "./App.css";
+import 'antd/dist/reset.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Dashboard from "./components/Dashboard";
+import SignUpSignIn from "./components/Signup";
 
 function App() {
   return (
-    <div className="App">
-      Hello World
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<SignUpSignIn />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+      </Routes>
+    </Router>
   );
 }
 
