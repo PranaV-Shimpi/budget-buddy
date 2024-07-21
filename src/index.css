@@ -6,10 +6,20 @@
 }
 body {
   margin: 0;
+  padding: 0 !important;
   font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  overflow: hidden;
+  overflow-y: scroll;
 }
+
+body::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+
+
 
 input {
   font-family: "Montserrat", sans-serif;
