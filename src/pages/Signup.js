@@ -8,7 +8,7 @@ import {
   sendPasswordResetEmail,
 } from "firebase/auth";
 import { doc, getDoc, setDoc } from "firebase/firestore";
-import Header from "./Header";
+import Header from "../components/Header";
 import { toast } from "react-toastify";
 
 const SignUpSignIn = () => {
@@ -130,7 +130,7 @@ const SignUpSignIn = () => {
   return (
     <>
       <Header />
-      <div className="wrapper">
+      <div className="wrapper signup">
         {forgotPassword ? (
           <div className="signup-signin-container">
             <h2 style={{ textAlign: "center" }}>

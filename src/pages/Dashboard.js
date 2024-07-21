@@ -2,16 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Card, Row } from "antd";
 import { Line, Pie } from "@ant-design/charts";
 import moment from "moment";
-import TransactionSearch from "./TransactionSearch";
-import Header from "./Header";
-import AddIncomeModal from "./Modals/AddIncome";
-import AddExpenseModal from "./Modals/AddExpense";
-import Cards from "./Cards";
-import NoTransactions from "./NoTransactions";
+import TransactionSearch from "../components/TransactionSearch";
+import Header from "../components/Header";
+import AddIncomeModal from "../components/Modals/AddIncome";
+import AddExpenseModal from "../components/Modals/AddExpense";
+import Cards from "../components/Cards";
+import NoTransactions from "../components/NoTransactions";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, db } from "../firebase";
 import { addDoc, collection, getDocs, query } from "firebase/firestore";
-import Loader from "./Loader";
+import Loader from "../components/Loader";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import { unparse } from "papaparse";
@@ -68,47 +68,6 @@ const Dashboard = () => {
 
     return { balanceData, spendingDataArray };
   };
-
-  // const processChartData = () => {
-  //   const balanceData = [];
-  //   const spendingData = {};
-  
-  //   transactions.forEach((transaction) => {
-  //     const date = moment(transaction.date).format("YYYY-MM-DD");
-  //     const tag = transaction.tag;
-  
-  //     if (transaction.type === "income") {
-  //       if (balanceData.some((data) => data.date === date)) {
-  //         balanceData.find((data) => data.date === date).balance += transaction.amount;
-  //       } else {
-  //         balanceData.push({ date: date, balance: transaction.amount });
-  //       }
-  //     } else {
-  //       if (balanceData.some((data) => data.date === date)) {
-  //         balanceData.find((data) => data.date === date).balance -= transaction.amount;
-  //       } else {
-  //         balanceData.push({ date: date, balance: -transaction.amount });
-  //       }
-  
-  //       if (spendingData[tag]) {
-  //         spendingData[tag] += transaction.amount;
-  //       } else {
-  //         spendingData[tag] = transaction.amount;
-  //       }
-  //     }
-  //   });
-  
-  //   // Sort balanceData by date
-  //   balanceData.sort((a, b) => new Date(a.date) - new Date(b.date));
-  
-  //   const spendingDataArray = Object.keys(spendingData).map((key) => ({
-  //     category: key,
-  //     value: spendingData[key],
-  //   }));
-  
-  //   return { balanceData, spendingDataArray };
-  // };
-  
 
   const { balanceData, spendingDataArray } = processChartData();
   const showExpenseModal = () => {
