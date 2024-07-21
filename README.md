@@ -2,7 +2,7 @@
 
 Track your finances, income, and expenses with the best UI featuring numerous charts and easy access to all your transactions. Budget Buddy is your go-to platform for managing your personal finances efficiently.
 
-- Live Link: [bb-budget-buddy.netlify.app](bb-budget-buddy.netlify.app)
+- Live Link: [https://bb-budget-buddy.netlify.app/](https://bb-budget-buddy.netlify.app/)
 - Source Code: [https://github.com/PranaV-Shimpi/budget-buddy/](https://github.com/PranaV-Shimpi/budget-buddy/)
 
 ## Table of Contents
