@@ -139,7 +139,7 @@
 .link-btn {
   color: blue;
   font-weight: 400;
-  textdecoration: none;
+  text-decoration: none;
   cursor: pointer;
   transition: color 0.1s ease, font-weight 0.3s ease, text-decoration 0.3s ease;
 }
