@@ -149,3 +149,11 @@
   font-weight: 600;
   text-decoration: underline;
 }
+
+.signup{
+  background-image: url(./Assets/Background.png);
+  background-position: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
