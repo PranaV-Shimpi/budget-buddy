@@ -19,11 +19,20 @@ Track your finances, income, and expenses with the best UI featuring numerous ch
 
 
 ## Demo
+
+Authentication:
 ![Login](https://github.com/user-attachments/assets/bf6925c8-f898-4237-8208-90c59718252c)
+
 ![Toasters](https://github.com/user-attachments/assets/a205d2b2-20a7-4c22-a71f-2c6703271f7b)
+
+Dashboard:
 ![Dashboard](https://github.com/user-attachments/assets/4dd91ced-b05c-451f-b992-73d5fdf01e8d)
+
+Transactions: 
 ![Transactions](https://github.com/user-attachments/assets/ed6cdc11-77af-4ec4-988d-f0fbd58ce118)
 
+Reset Password :
+![Reset Password](https://github.com/user-attachments/assets/b6a995ef-fe29-4d16-ac90-7bcddcde7bcc)
 
 
 ## Features
